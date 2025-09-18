@@ -21,10 +21,10 @@ export default function Home() {
     s.type = 'module';
 
     // Retell widget expects data-* attributes
-    (s as any).dataset.publicKey = publicKey;
-    (s as any).dataset.agentId = agentId;
-    (s as any).dataset.title = 'MedMe Assistant';
-    (s as any).dataset.autoOpen = 'true';
+    s.dataset.publicKey = publicKey;
+    s.dataset.agentId = agentId;
+    s.dataset.title = 'MedMe Assistant';
+    s.dataset.autoOpen = 'true';
 
     document.body.appendChild(s);
 
